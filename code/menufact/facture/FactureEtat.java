@@ -1,5 +1,6 @@
 package menufact.facture;
 
-public enum FactureEtat {
+public enum FactureEtat
+{
     OUVERTE, FERMEE, PAYEE
 }

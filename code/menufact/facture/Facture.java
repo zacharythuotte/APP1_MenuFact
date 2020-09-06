@@ -12,10 +12,12 @@ import java.util.Date;
  * @author Domingo Palao Munoz
  * @version 1.0
  */
-public class Facture {
+public class Facture
+{
     private Date date;
     private String description;
-    private FactureEtat etat;
+    private EtatFacture etat;
+
     private ArrayList<PlatChoisi> platchoisi = new ArrayList<PlatChoisi>();
     private int courant;
     private Client client;
@@ -75,14 +77,14 @@ public class Facture {
      */
     public void payer()
     {
-       etat = FactureEtat.PAYEE;
+       etat = new EtatPayee();
     }
     /**
      * Permet de chager l'état de la facture à FERMEE
      */
     public void fermer()
     {
-       etat = FactureEtat.FERMEE;
+       etat = new EtatFermee();
     }
 
     /**
@@ -91,17 +93,17 @@ public class Facture {
      */
     public void ouvrir() throws FactureException
     {
-        if (etat == FactureEtat.PAYEE)
+        if (etat instanceof EtatPayee)
             throw new FactureException("La facture ne peut pas être reouverte.");
         else
-            etat = FactureEtat.OUVERTE;
+            etat = new EtatOuverte();
     }
 
     /**
      *
      * @return l'état de la facture
      */
-    public FactureEtat getEtat()
+    public EtatFacture getEtat()
     {
         return etat;
     }
@@ -112,7 +114,7 @@ public class Facture {
      */
     public Facture(String description) {
         date = new Date();
-        etat = FactureEtat.OUVERTE;
+        etat = new EtatOuverte();
         courant = -1;
         this.description = description;
     }
@@ -124,7 +126,7 @@ public class Facture {
      */
     public void ajoutePlat(PlatChoisi p) throws FactureException
     {
-        if (etat == FactureEtat.OUVERTE)
+        if (etat instanceof EtatOuverte)
             platchoisi.add(p);
         else
             throw new FactureException("On peut ajouter un plat seulement sur une facture OUVERTE.");

@@ -14,6 +14,10 @@ public class TestMenuFact03 {
             PlatAuMenu p1 = new PlatAuMenu(0, "Frites sauce", 11.50);
             System.out.println(p1);
 
+            System.out.println("===menufact.plats.PlatAuMenu Constructeur 3 arguments");
+            PlatAuMenu p2 = new PlatAuMenu(1, "cote levee erable", 20.00);
+            System.out.println(p2);
+
             System.out.println("== Plat choisi");
             PlatChoisi pch1 = new PlatChoisi(p1, 5);
             System.out.println(pch1);
@@ -53,6 +57,26 @@ public class TestMenuFact03 {
             facture.ouvrir();
             System.out.println(facture);
             System.out.println("Etat = " + facture.getEtat());
+
+
+
+            Menu m1 = new Menu("Premier menu");
+            MenuView mv1 = new MenuView();
+            MenuController controller = new MenuController(m1, mv1);
+
+            m1.ajoute(p1);
+            controller.updateView();
+
+            m1.ajoute(p2);
+            controller.updateView();
+
+            m1.ajoute(2,"spagetti", 10.00);
+            controller.updateView(2);
+            controller.updateView();
+
+            controller.updateView(3);
+
+
         }catch (Exception fe)
         {
             System.out.println(fe.getMessage());

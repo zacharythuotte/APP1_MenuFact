@@ -8,15 +8,42 @@ import java.util.ArrayList;
 public class Menu {
     private String description;
     private int courant;
-    private ArrayList<PlatAuMenu> plat = new ArrayList<PlatAuMenu>();
+    private ArrayList<PlatAuMenu> plat = new ArrayList<>();
 
     public Menu(String description) {
         this.description = description;
     }
 
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getDescription() {
+        return this.description;
+    }
+
+    public void setPosition(int position) {
+        this.courant = position;
+    }
+
+    public int getPosition() {
+        return courant;
+    }
+
+    public ArrayList<PlatAuMenu> getPlat()
+    {
+        return plat;
+    }
+
+
     void ajoute (PlatAuMenu p)
     {
         plat.add(p);
+    }
+    void ajoute (int code, String description, double prix)
+    {
+        PlatAuMenu platAuMenu = new PlatAuMenu(code,description,prix);
+        plat.add(platAuMenu);
     }
 
     public void position(int i)

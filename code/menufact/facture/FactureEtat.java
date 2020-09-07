@@ -4,3 +4,5 @@ public enum FactureEtat
 {
     OUVERTE, FERMEE, PAYEE
 }
+
+

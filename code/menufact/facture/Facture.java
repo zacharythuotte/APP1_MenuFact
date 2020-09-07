@@ -22,7 +22,6 @@ public class Facture
     private int courant;
     private Client client;
 
-
     /**********************Constantes ************/
     private final double TPS = 0.05;
     private final double TVQ = 0.095;
@@ -60,7 +59,7 @@ public class Facture
      *
      * @return la valeur de la TPS
      */
-    private double tps(){
+    protected double tps(){
         return TPS*sousTotal();
     }
 
@@ -68,7 +67,7 @@ public class Facture
      *
      * @return la valeur de la TVQ
      */
-    private  double tvq(){
+    protected double tvq(){
         return TVQ*(TPS+1)*sousTotal();
     }
 
@@ -77,14 +76,16 @@ public class Facture
      */
     public void payer()
     {
-       etat = new EtatPayee();
+        etat.payer();
+//       etat = new EtatPayee();
     }
     /**
      * Permet de chager l'état de la facture à FERMEE
      */
     public void fermer()
     {
-       etat = new EtatFermee();
+        etat.fermer();
+//       etat = new EtatFermee();
     }
 
     /**
@@ -93,10 +94,17 @@ public class Facture
      */
     public void ouvrir() throws FactureException
     {
-        if (etat instanceof EtatPayee)
-            throw new FactureException("La facture ne peut pas être reouverte.");
-        else
-            etat = new EtatOuverte();
+        etat.ouvrir();
+
+//        if (etat instanceof EtatPayee)
+//            throw new FactureException("La facture ne peut pas être reouverte.");
+//        else
+//            etat = new EtatOuverte();
+    }
+
+    public void changeEtat(EtatFacture nouvelEtat)
+    {
+        etat = nouvelEtat;
     }
 
     /**
@@ -112,9 +120,14 @@ public class Facture
      *
      * @param description la description de la Facture
      */
-    public Facture(String description) {
+    public Facture(String description)
+    {
         date = new Date();
-        etat = new EtatOuverte();
+
+        EtatOuverte etatInitial = new EtatOuverte();
+        etat = etatInitial;
+        etatInitial.setFacture(this);
+
         courant = -1;
         this.description = description;
     }
@@ -137,7 +150,8 @@ public class Facture
      * @return le contenu de la facture en chaîne de caracteres
      */
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "menufact.facture.Facture{" +
                 "date=" + date +
                 ", description='" + description + '\'' +
@@ -156,17 +170,21 @@ public class Facture
      */
     public String genererFacture()
     {
+        return etat.genererFacture();
+    }
+
+    protected String ecrireFacture()
+    {
         String lesPlats = new String();
         String factureGenere = new String();
 
         int i =1;
 
-
         factureGenere =   "Facture generee.\n" +
-                          "Date:" + date + "\n" +
-                          "Description: " + description + "\n" +
-                          "Client:" + client.getNom() + "\n" +
-                          "Les plats commandes:" + "\n" + lesPlats;
+                "Date:" + date + "\n" +
+                "Description: " + description + "\n" +
+                "Client:" + client.getNom() + "\n" +
+                "Les plats commandes:" + "\n" + lesPlats;
 
         factureGenere += "Seq   Plat         Prix   Quantite\n";
         for (PlatChoisi plat : platchoisi)

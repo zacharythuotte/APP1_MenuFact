@@ -2,6 +2,7 @@ package menufact.facture;
 
 public class EtatOuverte implements EtatFacture
 {
+    private Facture facture;
 //    private FactureEtat etat;
 
 //    public void EtatOuverte()
@@ -10,5 +11,32 @@ public class EtatOuverte implements EtatFacture
 //    }
 
     @Override
-    public String toString() { return "Ouverte"; }
+    public String toString() { return "EtatOuverte"; }
+
+    public void setFacture(Facture factureAssociee)
+    {
+        facture = factureAssociee;
+    }
+
+    public void ouvrir() { }
+
+    public void fermer()
+    {
+        EtatFermee nouvelEtat = new EtatFermee();
+        nouvelEtat.setFacture(facture);
+        facture.changeEtat(nouvelEtat);
+    }
+
+    public void payer()
+    {
+        EtatPayee nouvelEtat = new EtatPayee();
+        nouvelEtat.setFacture(facture);
+        facture.changeEtat(nouvelEtat);
+    }
+
+    public String genererFacture()
+    {
+        //Lancer exception plutot
+        return "La facture est encore ouverte";
+    }
 }

@@ -6,7 +6,10 @@ public class PlatChoisi {
     private PlatAuMenu plat;
     private int quantite;
 
-    public PlatChoisi(PlatAuMenu plat, int quantite) {
+    private EtatPlat etat;
+
+    public PlatChoisi(PlatAuMenu plat, int quantite)
+    {
         this.plat = plat;
         this.quantite = quantite;
     }
@@ -29,5 +32,10 @@ public class PlatChoisi {
 
     public PlatAuMenu getPlat() {
         return plat;
+    }
+
+    public void setEtat(EtatPlat nouvelEtat)
+    {
+        etat.setEtat(nouvelEtat);
     }
 }

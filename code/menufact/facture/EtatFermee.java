@@ -31,6 +31,11 @@ public class EtatFermee implements EtatFacture
         facture.changeEtat(nouvelEtat);
     }
 
+    public Boolean peutAjouter()
+    {
+        return Boolean.FALSE;
+    }
+
     public String genererFacture()
     {
         return facture.ecrireFacture();

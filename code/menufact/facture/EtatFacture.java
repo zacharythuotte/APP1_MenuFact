@@ -11,5 +11,7 @@ public interface EtatFacture
     @Override
     public String toString();
 
+    public Boolean peutAjouter();
+
     public String genererFacture();
 }

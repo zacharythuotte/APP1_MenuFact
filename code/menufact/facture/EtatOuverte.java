@@ -34,6 +34,11 @@ public class EtatOuverte implements EtatFacture
         facture.changeEtat(nouvelEtat);
     }
 
+    public Boolean peutAjouter()
+    {
+        return Boolean.TRUE;
+    }
+
     public String genererFacture()
     {
         //Lancer exception plutot

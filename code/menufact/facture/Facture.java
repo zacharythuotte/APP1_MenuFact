@@ -1,6 +1,7 @@
 package menufact.facture;
 
 import menufact.Client;
+import menufact.Cuisinier;
 import menufact.facture.exceptions.FactureException;
 import menufact.plats.PlatChoisi;
 
@@ -21,6 +22,8 @@ public class Facture
     private ArrayList<PlatChoisi> platchoisi = new ArrayList<PlatChoisi>();
     private int courant;
     private Client client;
+
+    private ArrayList<Cuisinier> chefs = new ArrayList<Cuisinier>();
 
     /**********************Constantes ************/
     private final double TPS = 0.05;
@@ -59,7 +62,7 @@ public class Facture
      *
      * @return la valeur de la TPS
      */
-    protected double tps(){
+    private double tps(){
         return TPS*sousTotal();
     }
 
@@ -67,7 +70,7 @@ public class Facture
      *
      * @return la valeur de la TVQ
      */
-    protected double tvq(){
+    private double tvq(){
         return TVQ*(TPS+1)*sousTotal();
     }
 
@@ -139,10 +142,35 @@ public class Facture
      */
     public void ajoutePlat(PlatChoisi p) throws FactureException
     {
-        if (etat instanceof EtatOuverte)
+        if (etat.peutAjouter() == Boolean.TRUE)
             platchoisi.add(p);
         else
             throw new FactureException("On peut ajouter un plat seulement sur une facture OUVERTE.");
+    }
+
+    public void ajouterCuisinier(Cuisinier cuisinierAAjouter)
+    {
+        chefs.add(cuisinierAAjouter);
+    }
+
+    public void retirerCuisinier(Cuisinier cuisinierARetirer)
+    {
+        chefs.remove(cuisinierARetirer);
+    }
+
+    public void avertirCuisiniers(PlatChoisi platACuisiner) throws FactureException
+    {
+        //Exception si aucun cuisiner n est ajoute
+
+        if(chefs.size() <= 0)
+        {
+            throw new FactureException("Il n y a aucun chef a avertir dans la liste des chefs de cette facture.");
+        }
+
+        for (int i = 0; i < chefs.size(); i++)
+        {
+            chefs.get(i).avertir(platACuisiner);
+        }
     }
 
     /**

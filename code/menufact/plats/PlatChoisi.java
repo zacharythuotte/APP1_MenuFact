@@ -2,7 +2,8 @@ package menufact.plats;
 
 import menufact.plats.PlatAuMenu;
 
-public class PlatChoisi {
+public class PlatChoisi
+{
     private Plat plat;
     private int quantite;
 

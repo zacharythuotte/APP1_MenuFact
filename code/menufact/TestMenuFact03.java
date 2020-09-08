@@ -1,12 +1,17 @@
 package menufact;
 
 import menufact.Menu;
+import menufact.exceptions.MenuException;
 import menufact.facture.Facture;
+import menufact.facture.exceptions.FactureException;
 import menufact.plats.*;
 
-public class TestMenuFact03 {
-    public static void main(String[] args) {
+import menufact.Chef;
 
+public class TestMenuFact03
+{
+    public static void main(String[] args)
+    {
         try {
             System.out.println("===menufact.plats.PlatAuMenu Constructeur 3 arguments");
             PlatAuMenu p1 = new PlatAuMenu(0, "Frites sauce", 11.50);
@@ -79,6 +84,8 @@ public class TestMenuFact03 {
 
             t.testMenu(m1);
 
+            Facture f1 = new Facture("Ma facture");
+            t.testChef(f1);
 
 
         }catch (Exception fe)
@@ -86,6 +93,68 @@ public class TestMenuFact03 {
             System.out.println(fe.getMessage());
         }
 
+    }
+
+    public void testEtatsPlats(Facture f1)
+    {
+        CreateurPlatAuMenu createurPlatAuMenu = new CreateurPlatAuMenu();
+
+        Plat p1 = createurPlatAuMenu.creerPlatMenu(12, "ordinaire", 1.00);
+        PlatChoisi platChoisi = new PlatChoisi(p1 , 2);
+
+//        platChoisi.setEtat(new EtatCommande());
+
+//        try
+//        {
+//            f1.ajoutePlat(platChoisi);
+//        }
+//        catch (Exception fe)
+//        {
+//
+//        }
+//
+//        f1.
+    }
+
+    public void testChef(Facture f1)
+    {
+        Chef c1 = new Chef("Jean");
+
+        f1.ajouterCuisinier(c1);
+
+        CreateurPlatAuMenu createurPlatAuMenu = new CreateurPlatAuMenu();
+        Plat p1 = createurPlatAuMenu.creerPlatMenu(12, "ordinaire", 1.00);
+        PlatChoisi platChoisi = new PlatChoisi(p1 , 2);
+
+        try
+        {
+            f1.avertirCuisiniers(platChoisi);
+        }
+        catch (Exception fe)
+        {
+            System.out.println(fe.getMessage());
+        }
+
+        f1.retirerCuisinier(c1);
+
+        try
+        {
+            f1.avertirCuisiniers(platChoisi);
+        }
+        catch (Exception fe)
+        {
+            System.out.println(fe.getMessage());
+        }
+
+//        try
+//        {
+//            f1.ajouterCuisinier(c1);
+//        }
+//        catch (FactureException fe)
+//        {
+//            throw fe;
+//        }
+        System.out.println(f1);
     }
 
     public void testMenu(Menu m1)

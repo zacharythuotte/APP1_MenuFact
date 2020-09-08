@@ -3,19 +3,20 @@ package menufact.plats;
 import menufact.plats.PlatAuMenu;
 
 public class PlatChoisi {
-    private PlatAuMenu plat;
+    private Plat plat;
     private int quantite;
 
     protected EtatPlat etat;
 
-    public PlatChoisi(PlatAuMenu plat, int quantite)
+    public PlatChoisi(Plat plat, int quantite)
     {
         this.plat = plat;
         this.quantite = quantite;
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "menufact.plats.PlatChoisi{" +
                 "quantite=" + quantite +
                 ", plat=" + plat +
@@ -30,7 +31,7 @@ public class PlatChoisi {
         this.quantite = quantite;
     }
 
-    public PlatAuMenu getPlat() {
+    public Plat getPlat() {
         return plat;
     }
 

@@ -35,7 +35,6 @@ public class Menu {
         return plat;
     }
 
-
     void ajoute (PlatAuMenu p)
     {
         plat.add(p);
@@ -59,7 +58,7 @@ public class Menu {
     public void positionSuivante() throws MenuException
     {
         if (courant+1 >= plat.size())
-            throw new MenuException("On depasse le nombre maximale de plats.");
+            throw new MenuException("On depasse le nombre maximal de plats.");
         else
             courant++;
     }
@@ -67,7 +66,7 @@ public class Menu {
     public void positionPrecedente() throws MenuException
     {
         if (courant-1 < 0)
-            throw new MenuException("On depasse le nombre minimale de plats");
+            throw new MenuException("On depasse le nombre minimal de plats");
         else
             courant--;
     }

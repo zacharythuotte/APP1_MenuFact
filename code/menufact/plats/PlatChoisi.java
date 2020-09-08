@@ -6,7 +6,7 @@ public class PlatChoisi {
     private PlatAuMenu plat;
     private int quantite;
 
-    private EtatPlat etat;
+    protected EtatPlat etat;
 
     public PlatChoisi(PlatAuMenu plat, int quantite)
     {

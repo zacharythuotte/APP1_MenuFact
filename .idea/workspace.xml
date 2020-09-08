@@ -20,12 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="890c1606-c92f-4274-981a-4f07ddf730f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/code/menufact/MenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/menufact/MenuView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/TestMenuFact03.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/TestMenuFact03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/facture/FactureEtat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/plats/EtatCommande.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/EtatCommande.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/plats/EtatImpossible.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/EtatImpossible.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/plats/EtatPlat.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/EtatPlat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/plats/EtatPreparation.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/EtatPreparation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/plats/EtatServi.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/EtatServi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/plats/EtatTermine.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/EtatTermine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/plats/PlatChoisi.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/PlatChoisi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/plats/PlatEtat.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,13 +102,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

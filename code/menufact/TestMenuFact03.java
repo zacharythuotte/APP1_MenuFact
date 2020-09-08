@@ -3,6 +3,7 @@ package menufact;
 import menufact.Menu;
 import menufact.facture.Facture;
 import menufact.plats.*;
+import ingredients.*;
 
 public class TestMenuFact03 {
     public static void main(String[] args) {
@@ -76,8 +77,10 @@ public class TestMenuFact03 {
             TestMenuFact03 t = new TestMenuFact03();
 
             Menu m1 = new Menu("Premier menu");
-
             t.testMenu(m1);
+
+            Ingredient i1 = new Ingredient();
+            t.testIngrediant(i1);
 
 
 
@@ -110,6 +113,11 @@ public class TestMenuFact03 {
         MenuController menuController = new MenuController(m1,view);
 
         menuController.updateView();
+
+    }
+
+    public void testIngrediant(Ingredient i1)
+    {
 
     }
 }

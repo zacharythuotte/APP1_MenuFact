@@ -45,7 +45,7 @@ public class Menu
     void ajoute (int code, String description, double prix)
     {
         CreateurPlatAuMenu createur = new CreateurPlatAuMenu();
-        Plat plat = createur.creerPlatAuMenu();//new PlatAuMenu(code,description,prix);
+        Plat plat = createur.creerPlatMenu(code,description,prix);//new PlatAuMenu(code,description,prix);
 
         lesPlats.add(plat);
     }

@@ -7,7 +7,7 @@ public class CreateurPlatAuMenu
         return new PlatAuMenu(code, description, prix);
     }
 
-    public Plat creerPlatAuMenu()
+    public Plat creerPlatMenu()
     {
         return new PlatAuMenu();
     }

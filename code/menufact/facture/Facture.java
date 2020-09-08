@@ -151,11 +151,15 @@ public class Facture
     public void ajouterCuisinier(Cuisinier cuisinierAAjouter)
     {
         chefs.add(cuisinierAAjouter);
+
+        System.out.println("Le chef " + cuisinierAAjouter + " est ajoute a la liste des cuisiniers de la facture");
     }
 
     public void retirerCuisinier(Cuisinier cuisinierARetirer)
     {
         chefs.remove(cuisinierARetirer);
+
+        System.out.println("Le chef " + cuisinierARetirer + " est retire de la liste des cuisiniers de la facture");
     }
 
     public void avertirCuisiniers(PlatChoisi platACuisiner) throws FactureException

@@ -1,9 +1,18 @@
 package ingredients;
 
-public class Ingredient {
+public class Ingredient implements  Produit
+{
     private String nom;
     private String description;
     private TypeIngredient typeIngredient;
+
+    public Ingredient() { }
+
+    public Ingredient(String nouveauNom, String nouvelleDescription)
+    {
+        this.nom = nouveauNom;
+        this.description = nouvelleDescription;
+    }
 
     public String getNom() {
         return nom;
@@ -21,11 +30,12 @@ public class Ingredient {
         this.description = description;
     }
 
-    public TypeIngredient getTypeIngredient() {
-        return typeIngredient;
-    }
+//    public TypeIngredient getTypeIngredient() {
+//        return typeIngredient;
+//    }
 
-    public void setTypeIngredient(TypeIngredient typeIngredient) {
-        this.typeIngredient = typeIngredient;
-    }
+//    public void setTypeIngredient(TypeIngredient typeIngredient)
+//    {
+//        this.typeIngredient = typeIngredient;
+//    }
 }

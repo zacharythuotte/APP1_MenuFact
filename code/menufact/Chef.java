@@ -10,7 +10,7 @@ public class Chef implements Cuisinier
      * Constructeur de chef
      * @param nouveauNom
      */
-    public void Chef(String nouveauNom)
+    public Chef(String nouveauNom)
     {
         nom = nouveauNom;
     }

@@ -1,15 +1,15 @@
 package ingredients;
 
-public class Legume extends Ingredient
+public class Epice extends Ingredient
 {
     private Double poids;
 
-    public Legume()
+    public Epice()
     {
 
     }
 
-    public Legume(String nom, String description, Double nouveauPoids)
+    public Epice(String nom, String description, Double nouveauPoids)
     {
         super(nom, description);
 

@@ -1,14 +1,17 @@
 package menufact;
 
 import menufact.exceptions.MenuException;
+import menufact.plats.CreateurPlatAuMenu;
+import menufact.plats.Plat;
 import menufact.plats.PlatAuMenu;
 
 import java.util.ArrayList;
 
-public class Menu {
+public class Menu
+{
     private String description;
     private int courant;
-    private ArrayList<PlatAuMenu> plat = new ArrayList<>();
+    private ArrayList<Plat> lesPlats = new ArrayList<Plat>();
 
     public Menu(String description) {
         this.description = description;
@@ -30,19 +33,21 @@ public class Menu {
         return courant;
     }
 
-    public ArrayList<PlatAuMenu> getPlat()
+    public ArrayList<Plat> getPlat()
     {
-        return plat;
+        return lesPlats;
     }
 
-    void ajoute (PlatAuMenu p)
+    void ajoute (Plat p)
     {
-        plat.add(p);
+        lesPlats.add(p);
     }
     void ajoute (int code, String description, double prix)
     {
-        PlatAuMenu platAuMenu = new PlatAuMenu(code,description,prix);
-        plat.add(platAuMenu);
+        CreateurPlatAuMenu createur = new CreateurPlatAuMenu();
+        Plat plat = createur.creerPlatAuMenu();//new PlatAuMenu(code,description,prix);
+
+        lesPlats.add(plat);
     }
 
     public void position(int i)
@@ -50,14 +55,14 @@ public class Menu {
         courant = i;
     }
 
-    public PlatAuMenu platCourant()
+    public Plat platCourant()
     {
-        return plat.get(courant);
+        return lesPlats.get(courant);
     }
 
     public void positionSuivante() throws MenuException
     {
-        if (courant+1 >= plat.size())
+        if (courant+1 >= lesPlats.size())
             throw new MenuException("On depasse le nombre maximal de plats.");
         else
             courant++;
@@ -77,7 +82,7 @@ public class Menu {
         return "menufact.Menu{" +
                 "description='" + description + '\'' +
                 ", courant=" + courant +
-                ", plat=" + "\n" + plat +
+                ", plat=" + "\n" + lesPlats +
                 '}';
     }
 }

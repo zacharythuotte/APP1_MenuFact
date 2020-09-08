@@ -1,6 +1,7 @@
 package menufact;
 
 import menufact.plats.PlatAuMenu;
+import menufact.plats.Plat;
 
 import java.util.ArrayList;
 
@@ -30,7 +31,7 @@ public class MenuController {
         return menu.getPosition();
     }
 
-    public ArrayList<PlatAuMenu> getMenuPlats()
+    public ArrayList<Plat> getMenuPlats()
     {
         return menu.getPlat();
     }

@@ -20,14 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="890c1606-c92f-4274-981a-4f07ddf730f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/code/menufact/plats/CreateurPlatAuMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/menufact/plats/CreateurPlatEnfant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/menufact/plats/CreateurPlatSante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/menufact/plats/Plat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/Chef.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/Chef.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/menufact/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/plats/PlatAuMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/PlatAuMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/plats/PlatChoisi.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/PlatChoisi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/MenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/MenuView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/plats/CreateurPlatAuMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/CreateurPlatAuMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/plats/CreateurPlatEnfant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/plats/CreateurPlatSante.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,25 +167,25 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added MVC pattern to menu" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1599570969186">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1599575235747">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1440.0.1152.720@0.0.1536.824" timestamp="1599570969186" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1440.0.1152.720@0.0.1536.824" timestamp="1599575235747" />
     <state width="1493" height="38" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599514626478" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1599570969186">
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1599575235747">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1440.0.1152.720@0.0.1536.824" timestamp="1599570969186" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1440.0.1152.720@0.0.1536.824" timestamp="1599575235747" />
     <state width="1493" height="38" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599514626478" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1599570969185">
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1599575235747">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1440.0.1152.720@0.0.1536.824" timestamp="1599570969185" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1440.0.1152.720@0.0.1536.824" timestamp="1599575235747" />
     <state width="1493" height="38" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599514626478" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1599570969186">
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1599575235747">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1440.0.1152.720@0.0.1536.824" timestamp="1599570969186" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1440.0.1152.720@0.0.1536.824" timestamp="1599575235747" />
     <state width="1493" height="38" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599514626478" />
     <state x="407" y="174" key="MultipleFileMergeDialog" timestamp="1599491147610">
       <screen x="0" y="0" width="1536" height="824" />

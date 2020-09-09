@@ -83,7 +83,7 @@ public class TestMenuFact03 {
 
 
             Facture f1 = new Facture("Ma facture");
-          
+
 
 //            t.testEtatsPlats();
 

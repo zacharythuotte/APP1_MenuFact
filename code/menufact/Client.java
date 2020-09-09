@@ -11,14 +11,26 @@ public class Client {
         this.numeroCarteCredit = numeroCarteCredit;
     }
 
+    /**
+     * retourne le id d un client
+     * @return
+     */
     public int getIdClient() {
         return idClient;
     }
 
+    /**
+     * change le id d un client
+     * @param idClient
+     */
     public void setIdClient(int idClient) {
         this.idClient = idClient;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getNom() {
         return nom;
     }

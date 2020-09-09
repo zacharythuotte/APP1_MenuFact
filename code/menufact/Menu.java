@@ -38,11 +38,11 @@ public class Menu
         return lesPlats;
     }
 
-    void ajoute (Plat p)
+    public void ajoute (Plat p)
     {
         lesPlats.add(p);
     }
-    void ajoute (int code, String description, double prix)
+    public void ajoute (int code, String description, double prix)
     {
         CreateurPlatAuMenu createur = new CreateurPlatAuMenu();
         Plat plat = createur.creerPlatMenu(code,description,prix);//new PlatAuMenu(code,description,prix);

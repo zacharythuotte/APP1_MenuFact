@@ -120,7 +120,7 @@ public class Facture
     }
 
     /**
-     *
+     * constructeur
      * @param description la description de la Facture
      */
     public Facture(String description)

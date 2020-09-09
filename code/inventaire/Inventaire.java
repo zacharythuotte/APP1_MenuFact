@@ -14,12 +14,4 @@ public class Inventaire
         lesProduits.add(a);
     }
 
-//
-//    @Override
-//    public String toString() {
-//
-//
-//        return "Inventaire{" +
-//                "Produits='" + lesProduits + '\'';
-//  }
 }

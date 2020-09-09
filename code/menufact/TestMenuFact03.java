@@ -10,10 +10,8 @@ import ingredients.*;
 
 import menufact.Chef;
 
-public class TestMenuFact03
-{
-    public static void main(String[] args)
-    {
+public class TestMenuFact03 {
+    public static void main(String[] args) {
         try {
             System.out.println("===menufact.plats.PlatAuMenu Constructeur 3 arguments");
             PlatAuMenu p1 = new PlatAuMenu(0, "Frites sauce", 11.50);
@@ -81,136 +79,18 @@ public class TestMenuFact03
 */
 
 
-
-
-
-
             TestMenuFact03 t = new TestMenuFact03();
 
-            Menu m1 = new Menu("Premier menu");
-            t.testMenu(m1);
-
-            CreateurIngredient i1 = new CreateurIngredient();
-            t.testIngrediant(i1);
 
             Facture f1 = new Facture("Ma facture");
-            t.testChef(f1);
+          
 
 //            t.testEtatsPlats();
 
 
-        }catch (Exception fe)
-        {
+        } catch (Exception fe) {
             System.out.println(fe.getMessage());
         }
-
-    }
-
-    public void testEtatsPlats()
-    {
-        System.out.println("\n----- Test de l etat des plats");
-
-        CreateurPlatAuMenu createurPlatAuMenu = new CreateurPlatAuMenu();
-
-        Plat p1 = createurPlatAuMenu.creerPlatMenu(12, "ordinaire", 1.00);
-        PlatChoisi platChoisi = new PlatChoisi(p1 , 2);
-
-        System.out.println("\n----- a");
-        platChoisi.setEtat(new EtatCommande(platChoisi));
-        System.out.println("\n----- b");
-
-//        try
-//        {
-//            f1.ajoutePlat(platChoisi);
-//        }
-//        catch (Exception fe)
-//        {
-//
-//        }
-//
-//        f1.
-    }
-
-    public void testChef(Facture f1)
-    {
-        System.out.println("\n----- [Observer] Test de chef");
-
-        Chef c1 = new Chef("Jean");
-
-        f1.ajouterCuisinier(c1);
-
-        CreateurPlatAuMenu createurPlatAuMenu = new CreateurPlatAuMenu();
-        Plat p1 = createurPlatAuMenu.creerPlatMenu(12, "ordinaire", 1.00);
-        PlatChoisi platChoisi = new PlatChoisi(p1 , 2);
-
-        try
-        {
-            f1.avertirCuisiniers(platChoisi);
-        }
-        catch (Exception fe)
-        {
-            System.out.println(fe.getMessage());
-        }
-
-        f1.retirerCuisinier(c1);
-
-        try
-        {
-            f1.avertirCuisiniers(platChoisi);
-        }
-        catch (Exception fe)
-        {
-            System.out.println(fe.getMessage());
-        }
-
-//        try
-//        {
-//            f1.ajouterCuisinier(c1);
-//        }
-//        catch (FactureException fe)
-//        {
-//            throw fe;
-//        }
-        System.out.println(f1);
-    }
-
-    public void testMenu(Menu m1)
-    {
-        System.out.println("\n----- [State] Test de l etat des plats");
-
-        CreateurPlatAuMenu createurPlatAuMenu = new CreateurPlatAuMenu();
-
-        Plat p1 = createurPlatAuMenu.creerPlatMenu();
-        Plat p2 = createurPlatAuMenu.creerPlatEnfant();
-        Plat p3 = createurPlatAuMenu.creerPlatSante();
-        Plat p4 = createurPlatAuMenu.creerPlatMenu(12, "ordinaire", 1.00);
-        Plat p5 = createurPlatAuMenu.creerPlatEnfant(8, "enfant", 100,3);
-        Plat p6 = createurPlatAuMenu.creerPlatSante(111,"santee", 112,2,2,2);
-
-        m1.ajoute(p1);
-        m1.ajoute(p2);
-        m1.ajoute(p3);
-        m1.ajoute(p4);
-        m1.ajoute(p5);
-        m1.ajoute(p6);
-
-        MenuView view = new MenuView();
-        MenuController menuController = new MenuController(m1,view);
-
-        menuController.updateView();
-
-    }
-
-    public void testIngrediant(CreateurIngredient i1)
-    {
-        Produit e1 = i1.CreerEpice();
-        Produit e2 = i1.CreerEpice("basilic", "feuille",0.1);
-        Produit f3 = i1.CreerLaitier("fromage","brie",10.00);
-
-        Inventaire inventaire = new Inventaire();
-        inventaire.ajouter(e2);
-
-//        System.out.println(inventaire);
 
     }
 }

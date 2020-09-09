@@ -105,9 +105,14 @@ public class Facture
 //            etat = new EtatOuverte();
     }
 
+    /**
+     * Permet de changer l etat de la facture
+     * @param nouvelEtat
+     */
     public void changeEtat(EtatFacture nouvelEtat)
     {
         etat = nouvelEtat;
+        nouvelEtat.setFacture(this);
     }
 
     /**
@@ -128,8 +133,8 @@ public class Facture
         date = new Date();
 
         EtatOuverte etatInitial = new EtatOuverte();
-        etat = etatInitial;
         etatInitial.setFacture(this);
+        etat = etatInitial;
 
         courant = -1;
         this.description = description;

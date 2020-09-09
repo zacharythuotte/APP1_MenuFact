@@ -5,15 +5,11 @@ import menufact.plats.PlatChoisi;
 public interface Cuisinier
 {
     /**
-     * avertis un cuisinier qu il y a un plat a preparer
+     * Methode qui avertit le cuisinier qu un nouveau plat doit etre prepare
      * @param platACuisiner
      */
     public void avertir(PlatChoisi platACuisiner);
 
-    /**
-     * fonction que affiche les iinfo a l ecran
-     * @return
-     */
     @Override
     public String toString();
 }

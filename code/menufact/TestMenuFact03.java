@@ -1,5 +1,6 @@
 package menufact;
 
+import inventaire.Inventaire;
 import menufact.Menu;
 import menufact.exceptions.MenuException;
 import menufact.facture.Facture;
@@ -79,12 +80,18 @@ public class TestMenuFact03
 
             controller.updateView(3);
 */
+
+
+
+
+
+
             TestMenuFact03 t = new TestMenuFact03();
 
             Menu m1 = new Menu("Premier menu");
             t.testMenu(m1);
 
-            Ingredient i1 = new Ingredient();
+            CreateurIngredient i1 = new CreateurIngredient();
             t.testIngrediant(i1);
 
             Facture f1 = new Facture("Ma facture");
@@ -185,8 +192,16 @@ public class TestMenuFact03
 
     }
 
-    public void testIngrediant(Ingredient i1)
+    public void testIngrediant(CreateurIngredient i1)
     {
+        Produit e1 = i1.CreerEpice();
+        Produit e2 = i1.CreerEpice("basilic", "feuille",0.1);
+        Produit f3 = i1.CreerLaitier("fromage","brie",10.00);
+
+        Inventaire inventaire = new Inventaire();
+        inventaire.ajouter(e2);
+
+//        System.out.println(inventaire);
 
     }
 }

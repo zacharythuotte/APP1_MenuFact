@@ -60,6 +60,10 @@ public class Menu
         return lesPlats.get(courant);
     }
 
+    /**
+     *  donne la position suivante du plat au menu
+     * @throws MenuException
+     */
     public void positionSuivante() throws MenuException
     {
         if (courant+1 >= lesPlats.size())

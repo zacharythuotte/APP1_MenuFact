@@ -26,8 +26,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="890c1606-c92f-4274-981a-4f07ddf730f8" name="Default Changelist" comment="fixed menu and created test for it">
+      <change afterPath="$PROJECT_DIR$/code/Test/MenuTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/inventaire/Inventaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/inventaire/Inventaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/menufact/TestMenuFact03.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/TestMenuFact03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APP1_MenuFact/inventaire/Inventaire.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1_MenuFact/inventaire/Inventaire.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APP1_MenuFact/menufact/TestMenuFact03.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1_MenuFact/menufact/TestMenuFact03.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +45,7 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -60,9 +66,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.TestMenuFact03">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Test" />
+      <recent name="menufact" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TestMenuFact02">
     <configuration name="TestMenuFact01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="menufact.TestMenuFact01" />
       <module name="APP1_MenuFact" />
@@ -117,8 +135,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestMenuFact03" />
         <item itemvalue="Application.TestMenuFact02" />
+        <item itemvalue="Application.TestMenuFact03" />
         <item itemvalue="Application.TestMenuFact01" />
       </list>
     </recent_temporary>
@@ -150,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599580598121</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixed menu and created test for it">
+      <created>1599584663137</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599584663137</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,42 +212,60 @@
     <option name="LAST_COMMIT_MESSAGE" value="fixed menu and created test for it" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="397" key="GridCell.Tab.0.bottom" timestamp="1599580589412">
+    <state x="-1230" y="311" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1599597025254">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1230" y="311" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599597025254" />
+    <state width="1877" height="292" key="GridCell.Tab.0.bottom" timestamp="1599611916824">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1440.0.1152.720@0.0.1536.824" timestamp="1599570969186" />
-    <state width="1877" height="397" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599580589412" />
+    <state width="1877" height="292" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599611916824" />
     <state width="1493" height="38" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599514626478" />
-    <state width="1877" height="397" key="GridCell.Tab.0.center" timestamp="1599580589412">
+    <state width="1877" height="292" key="GridCell.Tab.0.center" timestamp="1599611916823">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1440.0.1152.720@0.0.1536.824" timestamp="1599570969186" />
-    <state width="1877" height="397" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599580589412" />
+    <state width="1877" height="292" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599611916823" />
     <state width="1493" height="38" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599514626478" />
-    <state width="1877" height="397" key="GridCell.Tab.0.left" timestamp="1599580589412">
+    <state width="1877" height="292" key="GridCell.Tab.0.left" timestamp="1599611916823">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1440.0.1152.720@0.0.1536.824" timestamp="1599570969185" />
-    <state width="1877" height="397" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599580589412" />
+    <state width="1877" height="292" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599611916823" />
     <state width="1493" height="38" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599514626478" />
-    <state width="1877" height="397" key="GridCell.Tab.0.right" timestamp="1599580589412">
+    <state width="1877" height="292" key="GridCell.Tab.0.right" timestamp="1599611916823">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1440.0.1152.720@0.0.1536.824" timestamp="1599570969186" />
-    <state width="1877" height="397" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599580589412" />
+    <state width="1877" height="292" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599611916823" />
     <state width="1493" height="38" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599514626478" />
-    <state x="407" y="174" key="MultipleFileMergeDialog" timestamp="1599491147610">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="-1671" y="111" key="MergeDialog" timestamp="1599584967096">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="-1671" y="111" key="MergeDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599584967096" />
+    <state x="-1411" y="220" key="MultipleFileMergeDialog" timestamp="1599584988354">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1411" y="220" key="MultipleFileMergeDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599584988354" />
     <state x="407" y="174" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1599491147610" />
     <state x="93" y="93" width="1350" height="638" key="ShowDiffWithBranchDialog" timestamp="1599492264343">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="ShowDiffWithBranchDialog/0.0.1536.824@0.0.1536.824" timestamp="1599492264343" />
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599489930410">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="-1251" y="236" key="VCS.ChangeListViewerDialog" timestamp="1599584684936">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="-1251" y="236" key="VCS.ChangeListViewerDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599584684936" />
+    <state x="-1187" y="411" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599584700789">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1187" y="411" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599584700789" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1599489930410" />
+    <state x="-1189" y="270" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1599597039479">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1189" y="270" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599597039479" />
     <state x="-1304" y="240" key="run.anything.popup" timestamp="1599583931721">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>

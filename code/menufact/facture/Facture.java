@@ -141,7 +141,7 @@ public class Facture
     }
 
     /**
-     *
+     *Methode pour ajouter un plat choisi a la liste de plats
      * @param p un plat choisi
      * @throws FactureException Seulement si la facture est OUVERTE
      */
@@ -153,6 +153,10 @@ public class Facture
             throw new FactureException("On peut ajouter un plat seulement sur une facture OUVERTE.");
     }
 
+    /**
+     * Methode pour ajouter un cuisinier a la liste de cuisiniers
+     * @param cuisinierAAjouter
+     */
     public void ajouterCuisinier(Cuisinier cuisinierAAjouter)
     {
         chefs.add(cuisinierAAjouter);
@@ -160,6 +164,10 @@ public class Facture
         System.out.println("Le chef " + cuisinierAAjouter + " est ajoute a la liste des cuisiniers de la facture");
     }
 
+    /**
+     * Methode pour retirer un cuisinier de la liste de cuisiniers
+     * @param cuisinierARetirer
+     */
     public void retirerCuisinier(Cuisinier cuisinierARetirer)
     {
         chefs.remove(cuisinierARetirer);
@@ -167,6 +175,11 @@ public class Facture
         System.out.println("Le chef " + cuisinierARetirer + " est retire de la liste des cuisiniers de la facture");
     }
 
+    /**
+     * Methode pour avertir chacun des chefs cuisiniers de preparer un plat choisi
+     * @param platACuisiner
+     * @throws FactureException
+     */
     public void avertirCuisiniers(PlatChoisi platACuisiner) throws FactureException
     {
         //Exception si aucun cuisiner n est ajoute
@@ -210,6 +223,10 @@ public class Facture
         return etat.genererFacture();
     }
 
+    /**
+     *
+     * @return une facture bien decrie et formattee
+     */
     protected String ecrireFacture()
     {
         String lesPlats = new String();

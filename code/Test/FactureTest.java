@@ -1,6 +1,10 @@
-package menufact.facture;
+package Test;
 
 import menufact.Chef;
+import menufact.facture.EtatFermee;
+import menufact.facture.EtatOuverte;
+import menufact.facture.EtatPayee;
+import menufact.facture.Facture;
 import menufact.facture.exceptions.FactureException;
 import menufact.plats.CreateurPlatAuMenu;
 import menufact.plats.Plat;

@@ -26,29 +26,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="890c1606-c92f-4274-981a-4f07ddf730f8" name="Default Changelist" comment="fixed menu and created test for it">
-      <change afterPath="$PROJECT_DIR$/code/Test/PlatChoisiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/menufact/facture/FactureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/APP1_MenuFact/Test/FactureTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP1_MenuFact.iml" beforeDir="false" afterPath="$PROJECT_DIR$/APP1_MenuFact.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Test/MenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Test/MenuTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Test/FactureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Test/FactureTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/ingredients/CreateurIngredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/ingredients/CreateurIngredient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/ingredients/Epice.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/ingredients/Epice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/ingredients/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/ingredients/Fruit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/ingredients/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/ingredients/Ingredient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/ingredients/Laitier.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/ingredients/Laitier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/ingredients/Legume.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/ingredients/Legume.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/ingredients/Produit.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/ingredients/Produit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/ingredients/TypeIngredient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/ingredients/Viande.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/ingredients/Viande.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/inventaire/Inventaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/inventaire/Inventaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/Chef.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/Chef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/Cuisinier.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/Cuisinier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/menufact/facture/Facture.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/facture/Facture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/plats/EtatCommande.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/EtatCommande.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/plats/EtatImpossible.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/EtatImpossible.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/plats/EtatPlat.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/EtatPlat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/plats/EtatPreparation.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/EtatPreparation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/plats/EtatServi.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/EtatServi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/plats/EtatTermine.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/EtatTermine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/plats/PlatChoisi.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/PlatChoisi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APP1_MenuFact/menufact/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1_MenuFact/menufact/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APP1_MenuFact/menufact/TestMenuFact03.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1_MenuFact/menufact/TestMenuFact03.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APP1_MenuFact/menufact/facture/Facture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1_MenuFact/menufact/facture/Facture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APP1_MenuFact/menufact/plats/EtatCommande.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1_MenuFact/menufact/plats/EtatCommande.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APP1_MenuFact/menufact/plats/EtatImpossible.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1_MenuFact/menufact/plats/EtatImpossible.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APP1_MenuFact/menufact/plats/EtatPlat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1_MenuFact/menufact/plats/EtatPlat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APP1_MenuFact/menufact/plats/EtatPreparation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1_MenuFact/menufact/plats/EtatPreparation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APP1_MenuFact/menufact/plats/EtatServi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1_MenuFact/menufact/plats/EtatServi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APP1_MenuFact/menufact/plats/EtatTermine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1_MenuFact/menufact/plats/EtatTermine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APP1_MenuFact/menufact/plats/PlatChoisi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1_MenuFact/menufact/plats/PlatChoisi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APP1_MenuFact/menufact/facture/FactureTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +78,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
@@ -102,7 +97,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PlatChoisiTest">
+  <component name="RunManager" selected="JUnit.FactureTest">
     <configuration name="TestMenuFact02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="menufact.TestMenuFact02" />
       <module name="APP1_MenuFact" />
@@ -144,12 +139,12 @@
       <module name="APP1_MenuFact" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="menufact.facture.*" />
+          <option name="PATTERN" value="Test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="menufact.facture" />
-      <option name="MAIN_CLASS_NAME" value="menufact.facture.FactureTest" />
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.FactureTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,12 +154,12 @@
       <module name="APP1_MenuFact" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="menufact.facture.*" />
+          <option name="PATTERN" value="Test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="menufact.facture" />
-      <option name="MAIN_CLASS_NAME" value="menufact.facture.FactureTest" />
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.FactureTest" />
       <option name="METHOD_NAME" value="payer" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -188,8 +183,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PlatChoisiTest" />
         <item itemvalue="JUnit.FactureTest" />
+        <item itemvalue="JUnit.PlatChoisiTest" />
         <item itemvalue="JUnit.FactureTest.payer" />
         <item itemvalue="Application.TestMenuFact02" />
         <item itemvalue="Application.TestMenuFact03" />
@@ -208,7 +203,7 @@
       <workItem from="1599489883710" duration="996000" />
       <workItem from="1599491029930" duration="254000" />
       <workItem from="1599491304551" duration="18219000" />
-      <workItem from="1599612667119" duration="9134000" />
+      <workItem from="1599612667119" duration="11766000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1599491125647</created>
@@ -272,28 +267,32 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1230" y="311" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599597025254" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1599623087310">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599625523287">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1440.0.1152.720@0.0.1536.824" timestamp="1599623087310" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/-1440.0.1152.720@0.0.1536.824" timestamp="1599625523287" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1599625523462">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1440.0.1152.720@0.0.1536.824" timestamp="1599625523462" />
     <state width="1877" height="292" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599611916824" />
     <state width="1493" height="38" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599514626478" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1599623087310">
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1599625523462">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1440.0.1152.720@0.0.1536.824" timestamp="1599623087310" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1440.0.1152.720@0.0.1536.824" timestamp="1599625523462" />
     <state width="1877" height="292" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599611916823" />
     <state width="1493" height="38" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599514626478" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1599623087310">
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1599625523462">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1440.0.1152.720@0.0.1536.824" timestamp="1599623087310" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1440.0.1152.720@0.0.1536.824" timestamp="1599625523462" />
     <state width="1877" height="292" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599611916823" />
     <state width="1493" height="38" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599514626478" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1599623087310">
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1599625523462">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1440.0.1152.720@0.0.1536.824" timestamp="1599623087310" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1440.0.1152.720@0.0.1536.824" timestamp="1599625523462" />
     <state width="1877" height="292" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599611916823" />
     <state width="1493" height="38" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599514626478" />
     <state x="-1671" y="111" key="MergeDialog" timestamp="1599584967096">

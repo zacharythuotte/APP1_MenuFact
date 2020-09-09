@@ -16,7 +16,7 @@ public class Chef implements Cuisinier
     }
 
     /**
-     *
+     * Methode pour avertir le chef qu il a un nouveau plat a cuisiner
      * @param platACuisiner
      */
     public void avertir(PlatChoisi platACuisiner)

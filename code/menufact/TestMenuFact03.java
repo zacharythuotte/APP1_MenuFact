@@ -63,7 +63,6 @@ public class TestMenuFact03
             System.out.println(facture);
             System.out.println("Etat = " + facture.getEtat());
 
-
           /*
             MenuView mv1 = new MenuView();
             MenuController controller = new MenuController(m1, mv1);
@@ -97,6 +96,8 @@ public class TestMenuFact03
             Facture f1 = new Facture("Ma facture");
             t.testChef(f1);
 
+//            t.testEtatsPlats();
+
 
         }catch (Exception fe)
         {
@@ -105,14 +106,18 @@ public class TestMenuFact03
 
     }
 
-    public void testEtatsPlats(Facture f1)
+    public void testEtatsPlats()
     {
+        System.out.println("\n----- Test de l etat des plats");
+
         CreateurPlatAuMenu createurPlatAuMenu = new CreateurPlatAuMenu();
 
         Plat p1 = createurPlatAuMenu.creerPlatMenu(12, "ordinaire", 1.00);
         PlatChoisi platChoisi = new PlatChoisi(p1 , 2);
 
-//        platChoisi.setEtat(new EtatCommande());
+        System.out.println("\n----- a");
+        platChoisi.setEtat(new EtatCommande(platChoisi));
+        System.out.println("\n----- b");
 
 //        try
 //        {
@@ -128,6 +133,8 @@ public class TestMenuFact03
 
     public void testChef(Facture f1)
     {
+        System.out.println("\n----- [Observer] Test de chef");
+
         Chef c1 = new Chef("Jean");
 
         f1.ajouterCuisinier(c1);
@@ -169,6 +176,8 @@ public class TestMenuFact03
 
     public void testMenu(Menu m1)
     {
+        System.out.println("\n----- [State] Test de l etat des plats");
+
         CreateurPlatAuMenu createurPlatAuMenu = new CreateurPlatAuMenu();
 
         Plat p1 = createurPlatAuMenu.creerPlatMenu();

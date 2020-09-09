@@ -13,4 +13,10 @@ public class EtatTermine
     {
         platChoisi.etat = nouvelEtat;
     }
+
+    @Override
+    public String toString()
+    {
+        return "EtatTermine";
+    }
 }
